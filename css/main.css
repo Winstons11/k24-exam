@@ -47,15 +47,17 @@ body {
    color: #f2f5f7;
 }
 
-.header__list > :first-child {
+.header__list a:hover {
    border-top: 2px solid #f2f5f7;
    border-bottom: 2px solid #f2f5f7;
-   padding: 7px 0;
+   padding:5px 0;
 }
+
+
 
 .main__slide {
    height: 720px;
-   background-image: url(../img/art_museum.jpg);
+   background-image: url(/img/art_museum.jpg);
 }
 
 .slade {
@@ -98,4 +100,22 @@ body {
 
 .home__slide {
    height: 490px;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+.text__font {
+   position: absolute;
+   top: 318px;
+   height: 143px;
+   width: 772px;
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.textslide__top {
+
+}
+
+.textslide__bottom {
+
 }
