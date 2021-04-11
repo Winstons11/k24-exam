@@ -73,7 +73,7 @@ body {
 
 .main__slide {
    height: 720px;
-   background-image: url(/img/art_museum.jpg);
+   background-image: url(../img/art_museum.jpg);
 }
 
 .slade {
@@ -149,4 +149,9 @@ body {
    color: white;
    font-size: 30px;
    margin: 0 0 0 25px;
+}
+
+.main__video {
+   background-image: url(../img/penopolistirol.jpg);
+   height: 780px;
 }
