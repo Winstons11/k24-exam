@@ -101,7 +101,10 @@ body {
    font-size: 16px;
    color: #2c2783;
    margin-top: 5px;
-   
+}
+
+.contacts a:hover {
+   color: tomato;
 }
 
 .line__form {
