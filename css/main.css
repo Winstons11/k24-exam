@@ -245,3 +245,75 @@ body {
    background-repeat: no-repeat;
 }
 
+.content__foto {
+   display: flex;
+   justify-content: center;
+   margin-top: 35px;
+   color: white;
+   font-size: 24px;
+   text-transform: uppercase;
+   font-family: "Arial";
+}
+.foto1 {
+   background-image: url(../img/building1.jpg);
+   background-repeat: no-repeat;
+   width: 615px;
+   height: 313px;
+}
+.foto2 {
+   background-image: url(../img/building2.jpg);
+   background-repeat: no-repeat;
+   width: 615px;
+   height: 313px;
+   
+}
+
+.text__left {
+   text-align: right;
+   margin-top: 22px;
+   margin-right: 48px;
+   margin-bottom: 22px;
+   text-transform: uppercase;
+}
+
+.text__right {
+   margin-top: 22px;
+   margin-left: 48px;
+   margin-bottom: 22px;
+   text-transform: uppercase;
+}
+
+.text__left li:first-child {
+   margin-top: 22px;
+}
+.text__right li:first-child {
+   margin-top: 22px;
+}
+
+.text__right li {
+   font-size: 14px;
+   margin-bottom: 7px;
+   background-color: #01983b;
+}
+
+.text__left li {
+   font-size: 14px;
+   margin-bottom: 7px;
+   background-color: #01983b;
+}
+
+.transparent {
+   text-align: right;
+   margin-right: 48px;
+   padding-top: 140px;
+}
+
+.transparent img {
+   vertical-align: middle;
+}
+
+.foto2 .transparent {
+   text-align: left;
+   margin-left: 48px;
+   padding-top: 140px;
+}
