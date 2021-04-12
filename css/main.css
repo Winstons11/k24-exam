@@ -166,7 +166,8 @@ body {
 
 .main__video {
    background-image: url(../img/penopolistirol.jpg);
-   height: 590px;
+   height: auto;
+   background-repeat: no-repeat;
 }
 
 .video__logo {
@@ -174,7 +175,7 @@ body {
    padding-top: 70px;
 }
 
-.video__title {
+.title {
    text-align: center;
    margin-top: 24px;
    font-size: 30px;
@@ -227,6 +228,7 @@ body {
    font-weight: 700;
    font-family: "EuropeExt";
    text-transform: uppercase;
+   margin-bottom: 60px;
 }
 
 .button__info:hover {
@@ -236,3 +238,10 @@ body {
 .button__info:active {
    background-color: #1e743f;
 }
+
+.main__scope {
+   background-image: url(../img/font8.jpg);
+   height: auto;
+   background-repeat: no-repeat;
+}
+
