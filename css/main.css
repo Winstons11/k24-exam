@@ -5,7 +5,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'EuropeExt';
 	src: url('../fonts/EuropeExtBold.eot');
@@ -74,6 +73,7 @@ body {
 .main__slide {
    height: 720px;
    background-image: url(../img/art_museum.jpg);
+   position: relative;
 }
 
 .slade {
@@ -89,10 +89,8 @@ body {
    font-family: 'Arial';
    font-weight: 400;
 }
-
 .block__content img {
    vertical-align: middle;
-   
 }
 
 .contacts {
@@ -101,25 +99,31 @@ body {
    font-size: 16px;
    color: #2c2783;
    margin-top: 5px;
+   margin-bottom: 5px;
 }
 
 .contacts a:hover {
-   color: tomato;
+   text-decoration: underline;
 }
 
-.line__form {
-   display: flex;
+.contacts a:active {
+   color: black;
 }
 
 .line {
    width: 389px;
-   height: 1px;
-   background-color: #2c2783;
-   margin: 20px 0 0 0;
+   border-bottom: 1px solid #2c2783;;
 }
 
 .form {
    margin: 0px 0px 0px 5px;
+}
+
+.line__form {
+   margin-top: 10px;
+}
+.line__form img {
+   background-color: white;
 }
 
 .home__slide {
@@ -151,7 +155,84 @@ body {
    margin: 0 0 0 25px;
 }
 
+.js-slider {
+   z-index: 2;
+}
+.shadow {
+   position: absolute;
+   left: 280px;
+   top: 585px;
+}
+
 .main__video {
    background-image: url(../img/penopolistirol.jpg);
-   height: 780px;
+   height: 590px;
+}
+
+.video__logo {
+   text-align: center;
+   padding-top: 70px;
+}
+
+.video__title {
+   text-align: center;
+   margin-top: 24px;
+   font-size: 30px;
+   letter-spacing: 1px;
+   font-family: 'EuropeExt';
+   font-weight: 700;
+   color: #073d79;
+   margin-bottom: 20px;
+}
+
+.video {
+   text-align: center;
+}
+
+.video img {
+   margin-top: -28px;
+}
+
+.video__text {
+   margin-bottom: -25px;
+}
+
+.video__text p {
+   margin-bottom: 25px;
+   font-size: 14px;
+   font-family: "Arial";
+   text-align: center;
+}
+
+.video__text a {
+   font-weight: 700;
+   color: black;
+}
+
+.button__video {
+   text-align: center;
+   margin-top: 40px;
+   
+}
+
+
+.button__info {
+   width: 405px;
+   height: 52px;
+   border-radius: 3px;
+   filter: drop-shadow(0px 3px 2.5px rgba(0,0,0,0.5));
+   background-color: #01983b;
+   font-size: 24px;
+   color: #ffffff;
+   font-weight: 700;
+   font-family: "EuropeExt";
+   text-transform: uppercase;
+}
+
+.button__info:hover {
+   background-color: #29c063;
+}
+
+.button__info:active {
+   background-color: #1e743f;
 }
