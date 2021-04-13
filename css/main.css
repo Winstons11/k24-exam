@@ -246,6 +246,7 @@ body {
 }
 
 .content__foto {
+   position: relative;
    display: flex;
    justify-content: center;
    margin-top: 35px;
@@ -259,6 +260,7 @@ body {
    background-repeat: no-repeat;
    width: 615px;
    height: 313px;
+   
 }
 .foto2 {
    background-image: url(../img/building2.jpg);
@@ -269,18 +271,23 @@ body {
 }
 
 .text__left {
-   text-align: right;
    margin-top: 22px;
-   margin-right: 48px;
-   margin-bottom: 22px;
    text-transform: uppercase;
+   text-align: -webkit-right;
+   margin-right: 5px;
 }
 
 .text__right {
    margin-top: 22px;
-   margin-left: 48px;
-   margin-bottom: 22px;
    text-transform: uppercase;
+}
+
+.text__left span {
+   margin-right: 48px;
+}
+
+.text__right span {
+   margin-left: 48px;
 }
 
 .text__left li:first-child {
@@ -294,26 +301,73 @@ body {
    font-size: 14px;
    margin-bottom: 7px;
    background-color: #01983b;
+   display: table;
+   padding: 2px 30px 2px 48px;
 }
 
 .text__left li {
    font-size: 14px;
    margin-bottom: 7px;
    background-color: #01983b;
+   display: table;
+   padding: 2px 48px 2px 30px;
+}
+
+.text__right li::after {
+   content: '';
+   
+}
+
+.transparent__downleft {
+   position: relative;
+}
+.transparent__downright {
+   position: relative;
+}
+
+
+.transparent__downleft .transparent__img {
+   position: absolute;
+   top: 289px;
+   right: 48px;
+}
+
+.transparent__downright .transparent__img {
+   position: absolute;
+   top: 289px;
+   right: 374px;
 }
 
 .transparent {
-   text-align: right;
-   margin-right: 48px;
-   padding-top: 140px;
+   height: 23px;
+   background-color: #fff;
+   opacity: 0.3;
+   position: absolute;
+   top: 285px;
+   width: 610px;
+   right: 5px;
 }
 
-.transparent img {
+.block__rhombus {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+
+.block__rhombus:nth-child(2n) {
+   
+}
+
+.rhombus {
+   background-image: url(../img/rhombus.png);
+   height: 190px;
+   width: 190px;
+   display: table-cell;
+   text-align: center;
    vertical-align: middle;
 }
 
-.foto2 .transparent {
-   text-align: left;
-   margin-left: 48px;
-   padding-top: 140px;
+.text__rhombus {
+   text-align: center;
+   margin-top: 20px;
 }
