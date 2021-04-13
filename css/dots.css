@@ -1,5 +1,30 @@
 .slick-dots {
    text-align: left;
-   bottom: 5px;
-   margin-left: 15px;
+   bottom: 10px;
+   margin-left: 20px;
+}
+
+.slick-dots li button {
+   width: 32px;
+   height: 12px;
+   opacity: 1;
+   background-color: #01983b;
+}
+
+.slick-dots li button:before {
+   background-color: #fff;
+   opacity: 1;
+   content: '';
+   width: 32px;
+   height: 12px;
+}
+
+.slick-dots li {
+   margin-right: 5px;
+   width: 32px;
+   height: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+   opacity: 0;
 }

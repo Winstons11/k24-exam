@@ -93,6 +93,14 @@ body {
    vertical-align: middle;
 }
 
+.social__insta:hover {
+   mix-blend-mode: exclusion;
+}
+
+.social__vk:hover {
+   mix-blend-mode: luminosity;
+}
+
 .contacts {
    font-family: 'Arial';
    font-weight: 700;
