@@ -28,3 +28,7 @@
 .slick-dots li.slick-active button:before {
    opacity: 0;
 }
+
+.slick-dots li button:hover {
+   opacity: .7;
+}

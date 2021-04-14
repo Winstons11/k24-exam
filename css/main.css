@@ -73,6 +73,7 @@ body {
 .main__slide {
    height: 720px;
    background-image: url(../img/art_museum.jpg);
+   background-position: center;
    position: relative;
 }
 
@@ -94,7 +95,7 @@ body {
 }
 
 .social__insta:hover {
-   mix-blend-mode: exclusion;
+   mix-blend-mode: luminosity;
 }
 
 .social__vk:hover {
@@ -178,7 +179,7 @@ body {
    background-repeat: no-repeat;
 }
 
-.video__logo {
+.logo {
    text-align: center;
    padding-top: 70px;
 }
@@ -249,6 +250,7 @@ body {
 
 .main__scope {
    background-image: url(../img/font8.jpg);
+   background-position: center;
    height: auto;
    background-repeat: no-repeat;
 }
@@ -360,10 +362,11 @@ body {
    display: flex;
    justify-content: center;
    margin-top: 50px;
+   margin-bottom: 70px;
 }
 
-.block__rhombus:nth-child(2n) {
-   
+.rhomb:nth-child(even) {
+   padding-top: 50px;
 }
 
 .rhombus {
@@ -378,4 +381,42 @@ body {
 .text__rhombus {
    text-align: center;
    margin-top: 20px;
+   font-size: 14px;
+   color: #01983b;
+   font-weight: 700;
+   font-family: "Arial";
+   margin-right: auto;
+   margin-left: auto;
+   text-transform: uppercase;
+   max-width: fit-content;
+}
+
+.title__characteristic {
+   text-align: center;
+   margin-top: 10px;
+   font-size: 30px;
+   letter-spacing: 1px;
+   font-family: 'EuropeExt';
+   font-weight: 700;
+   color: #01983b;
+   margin-bottom: 20px;
+}
+
+.characteristic__content {
+   background-image: url();
+   background-position: center;
+   height: auto;
+   background-repeat: no-repeat;
+   background: cadetblue;
+}
+
+.block__characteristic {
+   width: 1230px;
+   height: 760px;
+   border-radius: 4px;
+   background-color: rgba(255, 255, 255, 0.5);
+   border: 3px solid #d5dfec; 
+   margin-left: auto;
+   margin-right: auto;
+   
 }
