@@ -393,7 +393,7 @@ body {
 
 .title__characteristic {
    text-align: center;
-   margin-top: 10px;
+   margin-top: 5px;
    font-size: 30px;
    letter-spacing: 1px;
    font-family: 'EuropeExt';
@@ -403,20 +403,51 @@ body {
 }
 
 .characteristic__content {
-   background-image: url();
-   background-position: center;
+   background-image: url(../img/tableBackground.jpg);
    height: auto;
    background-repeat: no-repeat;
-   background: cadetblue;
 }
 
 .block__characteristic {
    width: 1230px;
-   height: 760px;
+   height: auto;
    border-radius: 4px;
    background-color: rgba(255, 255, 255, 0.5);
-   border: 3px solid #d5dfec; 
+   border: 3px solid #d5dfec;
    margin-left: auto;
    margin-right: auto;
    
+}
+
+.sl {
+   margin-right: auto;
+   margin-left: auto;
+   border-collapse: collapse;
+   margin-top: 20px;
+   border-top: 4px solid #d5dfec;
+   background-color: #fff;
+   overflow: hidden; 
+   border-radius: 4px;
+}
+
+.sl td {
+   border: 1px solid #d5dfec;
+   height: 39px;
+   font-size: 14px;
+   letter-spacing: 0px;
+   font-weight: 700;
+   font-family: "Arial";
+   text-align: center;
+   padding: 0 15px 0 15px
+}
+.sl tr:first-child {
+   background-color: #01983b;
+   color: #fff;
+}
+.sl tr:nth-child(even) {
+   background-color:#f2f5f7;
+}
+
+.sl td:first-of-type {
+   text-align: left;
 }
