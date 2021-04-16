@@ -605,10 +605,8 @@ body {
 }
 
 .table__tasks {
-   
    color: #ffffff;
    font-family: "Arial";
-
 }
 
 .table__list td {
@@ -616,11 +614,6 @@ body {
    box-sizing: border-box;
    padding: 5px 0 5px 5px;
 }
-
-.table__list tr {
-   
-}
-
 
 .table__list td:nth-child(1) {
    opacity: .3;
@@ -632,28 +625,25 @@ body {
    font-size: 0;
    width: 60px;
 }
-.table__list td:nth-child(3) {
+.table__list td:nth-child(4) {
    width: 366px;
 }
-.table__list td:nth-child(4) {
+.table__list td:nth-child(5) {
    opacity: 0;
    width: 10px;
 }
-.table__list td:nth-child(5) {
-   
-}
-.table__list td:nth-child(6) {
+
+.table__list td:nth-child(8) {
    opacity: .7;
    font-size: 0;
    width: 60px;
 }
-.table__list td:nth-child(7) {
+.table__list td:nth-child(9) {
    opacity: .3;
    font-size: 0;
    width: 60px;
 }
 
 .table__tasks img {
-   vertical-align: middle;
-   padding: 0px 30px 0px 15px;
+   padding: 0px 20px 0px 10px;
 }
