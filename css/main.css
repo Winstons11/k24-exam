@@ -68,6 +68,10 @@ body {
    padding:5px 0;
 }
 
+.header__list a:active {
+   filter: drop-shadow(1px 3px 2.5px rgba(255, 255, 255, 0.782));
+}
+
 
 
 .main__slide {
@@ -137,7 +141,7 @@ body {
 
 .home__slide {
    height: 490px;
-   background-repeat: no-repeat;
+   background-repeat: round;
    position: relative;
 }
 
@@ -688,25 +692,35 @@ body {
 }
 .footer span {
    display: block;
+   color: #ffffff;
+   font-weight: 700;
+   font-family: "Arial";
 }
 
 .footer a {
-   display: block;
+   display: table;
+   margin: 0px auto;
    margin-bottom: 6px;
 }
 
-.block__soc a {
+.footer__soc a {
    display: inline;
+   color: white;
 }
 
-.block__soc span {
+.footer__soc span {
    margin-top: 15px;
    margin-bottom: 6px;
 }
 
-.block__soc .wezom {
-   line-height: 12px;
+.footer__soc .wezom {
    color: #ffffff;
    font-weight: 700;
    font-family: "Arial";
+   margin-top: 100px;
+   text-transform: uppercase;
+}
+
+.footer__soc img:hover {
+   transform: scale(1.2);
 }
