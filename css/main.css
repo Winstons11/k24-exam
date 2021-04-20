@@ -216,6 +216,7 @@ body {
 .video__text a {
    font-weight: 700;
    color: black;
+   text-decoration: none;
 }
 
 .button__video {
@@ -658,6 +659,7 @@ body {
    line-height: 1.5;
    display: inline-block;
    margin-top: 7px;
+   text-decoration: none;
 }
 
 .contakt__text a:last-child {
@@ -715,4 +717,8 @@ body {
 
 .footer__soc img:hover {
    transform: scale(1.2);
+}
+
+.wezom a {
+   text-decoration: none;
 }
