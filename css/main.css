@@ -15,9 +15,6 @@
 * {
    margin: 0;
 }
-button:active, button:focus, input {
-   outline: none;
-}
 
 body {
    width: 1920px;
@@ -72,7 +69,7 @@ body {
 .slade {
    display: flex;
    justify-content: space-between;
-   height: 140px;
+   height: 100px;
    padding: 35px 0 0 0;
 }
 
@@ -118,6 +115,7 @@ body {
    width: 389px;
    border: 0;
    border-bottom: 1px solid #2c2783;
+   outline: none;
 }
 
 .form {
@@ -153,7 +151,7 @@ body {
    font-family: "EuropeExt", "Arial", sans-serif;
    color: white;
    font-size: 36px;
-   margin: 15px 0 0 25px;
+   margin: 22px 0 0 25px;
 }
 
 .textslide__bottom {
@@ -161,7 +159,7 @@ body {
    font-weight: 700;
    color: white;
    font-size: 30px;
-   margin: 0 0 0 25px;
+   margin: -8px 0 0 25px;
 }
 
 .js-slider {
@@ -676,7 +674,7 @@ body {
 }
 
 .footer {
-   height: 320px;
+   height: 280px;
    background-image: url(../img/backgroundFooter.jpg);
    margin-top: 311px;
    text-align: center;
@@ -687,6 +685,7 @@ body {
    color: #ffffff;
    font-weight: 700;
    font-family: "Arial", sans-serif;
+   font-size: 12px;
 }
 
 .footer a {
@@ -698,6 +697,7 @@ body {
 .footer__soc a {
    display: inline;
    color: white;
+   font-size: 12px;
 }
 
 .footer__soc span {
@@ -709,7 +709,7 @@ body {
    color: #ffffff;
    font-weight: 700;
    font-family: "Arial", sans-serif;
-   margin-top: 100px;
+   margin-top: 75px;
    text-transform: uppercase;
 }
 
