@@ -1,96 +1,23 @@
 @font-face {
    font-family: "EuropeExt";
-   src: url("../fonts/EuropeExtNormal.eot");
-   src: local("☺"), url("../fonts/EuropeExtNormal.woff") format("woff"),
-      url("../fonts/EuropeExtNormal.ttf") format("truetype"), url("../fonts/EuropeExtNormal.svg") format("svg");
+   src: url("../fonts/EuropeExtNormal.woff2") format("woff2");
    font-weight: normal;
    font-style: normal;
 }
+
 @font-face {
    font-family: "EuropeExt";
-   src: url("../fonts/EuropeExtBold.eot");
-   src: local("☺"), url("../fonts/EuropeExtBold.woff") format("woff"),
-      url("../fonts/EuropeExtBold.ttf") format("truetype"), url("../fonts/EuropeExtBold.svg") format("svg");
+   src: url("../fonts/EuropeExtBold.woff2") format("woff2");
    font-weight: 700;
    font-style: normal;
 }
 
-/*Обнуление*/
 * {
-   padding: 0;
    margin: 0;
-   border: 0;
 }
-*,
-*:before,
-*:after {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-}
-:focus,
-:active {
+button:active, button:focus, input {
    outline: none;
 }
-a:focus,
-a:active {
-   outline: none;
-}
-nav,
-footer,
-header,
-aside {
-   display: block;
-}
-html,
-body {
-   height: 100%;
-   width: 100%;
-   font-size: 100%;
-   line-height: 1;
-   font-size: 14px;
-   -ms-text-size-adjust: 100%;
-   -moz-text-size-adjust: 100%;
-   -webkit-text-size-adjust: 100%;
-}
-input,
-button,
-textarea {
-   font-family: inherit;
-}
-input::-ms-clear {
-   display: none;
-}
-button {
-   cursor: pointer;
-}
-button::-moz-focus-inner {
-   padding: 0;
-   border: 0;
-}
-a,
-a:visited {
-   text-decoration: none;
-}
-a:hover {
-   text-decoration: none;
-}
-ul li {
-   list-style: none;
-}
-img {
-   vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-   font-size: inherit;
-   font-weight: inherit;
-}
-/*--------------------*/
 
 body {
    width: 1920px;
@@ -110,18 +37,21 @@ body {
 }
 
 .header__list {
+   list-style: none;
    display: flex;
    height: 80px;
    align-items: center;
    justify-content: space-between;
+   padding: 0;
 }
 
 .header__list a {
-   font-family: "Arial";
+   text-decoration: none;
+   font-family: "Arial", sans-serif;
    color: white;
    font-size: 16px;
 }
-
+.header__list .is-active,
 .header__list a:hover {
    border-top: 2px solid #f2f5f7;
    border-bottom: 2px solid #f2f5f7;
@@ -149,7 +79,7 @@ body {
 .block__content {
    color: #01983b;
    text-align: right;
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
    font-weight: 400;
 }
 .block__content img {
@@ -165,12 +95,15 @@ body {
 }
 
 .contacts {
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
    font-weight: 700;
    font-size: 16px;
    color: #2c2783;
    margin-top: 5px;
    margin-bottom: 5px;
+}
+.contacts a {
+   text-decoration: none;
 }
 
 .contacts a:hover {
@@ -183,11 +116,16 @@ body {
 
 .line {
    width: 389px;
+   border: 0;
    border-bottom: 1px solid #2c2783;
 }
 
 .form {
-   margin: 0px 0px 0px 5px;
+   margin: 0 0 0 5px;
+   cursor: pointer;
+   border: 0;
+   background: none;
+   padding: 0;
 }
 
 .line__form {
@@ -212,14 +150,14 @@ body {
 }
 
 .textslide__top {
-   font-family: "EuropeExt";
+   font-family: "EuropeExt", "Arial", sans-serif;
    color: white;
    font-size: 36px;
    margin: 15px 0 0 25px;
 }
 
 .textslide__bottom {
-   font-family: "EuropeExt";
+   font-family: "EuropeExt", "Arial", sans-serif;
    font-weight: 700;
    color: white;
    font-size: 30px;
@@ -243,7 +181,7 @@ body {
 
 .logo {
    text-align: center;
-   padding-top: 70px;
+   padding-top: 62px;
 }
 
 .title {
@@ -251,7 +189,7 @@ body {
    margin-top: 24px;
    font-size: 30px;
    letter-spacing: 1px;
-   font-family: "EuropeExt";
+   font-family: "EuropeExt", "Arial", sans-serif;
    font-weight: 700;
    color: #073d79;
    margin-bottom: 20px;
@@ -273,7 +211,7 @@ body {
 .video__text p {
    margin-bottom: 25px;
    font-size: 14px;
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
    text-align: center;
 }
 
@@ -291,14 +229,16 @@ body {
    width: 405px;
    height: 52px;
    border-radius: 3px;
-   filter: drop-shadow(0px 3px 2.5px rgba(0, 0, 0, 0.5));
+   filter: drop-shadow(0 3px 2.5px rgba(0, 0, 0, 0.5));
    background-color: #01983b;
    font-size: 24px;
    color: #ffffff;
    font-weight: 700;
-   font-family: "EuropeExt";
+   font-family: "EuropeExt", "Arial", sans-serif;
    text-transform: uppercase;
    margin-bottom: 60px;
+   border: 0;
+   cursor: pointer;
 }
 
 .button__info:hover {
@@ -324,7 +264,7 @@ body {
    color: white;
    font-size: 24px;
    text-transform: uppercase;
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
 }
 .foto1 {
    background-image: url(../img/building1.jpg);
@@ -351,6 +291,10 @@ body {
    text-transform: uppercase;
 }
 
+.text__right ul {
+   padding: 0;
+}
+
 .text__left span {
    margin-right: 48px;
 }
@@ -360,10 +304,10 @@ body {
 }
 
 .text__left li:first-child {
-   margin-top: 22px;
+   margin-top: 15px;
 }
 .text__right li:first-child {
-   margin-top: 22px;
+   margin-top: 15px;
 }
 
 .text__right li {
@@ -437,14 +381,14 @@ body {
 
 .transparent__downleft .transparent__img {
    position: absolute;
-   top: 289px;
-   right: 48px;
+   top: 285px;
+   right: 51px;
 }
 
 .transparent__downright .transparent__img {
    position: absolute;
-   top: 289px;
-   right: 374px;
+   top: 285px;
+   right: 368px;
 }
 
 .transparent {
@@ -460,7 +404,7 @@ body {
 .block__rhombus {
    display: flex;
    justify-content: center;
-   margin-top: 50px;
+   margin-top: 45px;
    margin-bottom: 70px;
 }
 
@@ -483,7 +427,7 @@ body {
    font-size: 14px;
    color: #01983b;
    font-weight: 700;
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
    margin-right: auto;
    margin-left: auto;
    text-transform: uppercase;
@@ -495,7 +439,7 @@ body {
    margin-top: 10px;
    font-size: 30px;
    letter-spacing: 1px;
-   font-family: "EuropeExt";
+   font-family: "EuropeExt", "Arial", sans-serif;
    font-weight: 700;
    color: #01983b;
    text-transform: uppercase;
@@ -527,13 +471,13 @@ body {
    overflow: hidden;
    border-radius: 4px;
    position: relative;
+   font-size: 14px;
 }
 
 .table__characteristic td {
    border: 1px solid #d5dfec;
    height: 39px;
-   font-weight: 700;
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
    text-align: center;
    padding: 0 15px 0 15px;
 }
@@ -548,6 +492,9 @@ body {
 .table__characteristic td:first-of-type {
    text-align: left;
 }
+.table__characteristic tr:first-of-type {
+   font-weight: 700;
+}
 
 .shadow__table {
    margin-top: -18px;
@@ -555,11 +502,11 @@ body {
 
 .title__tasks {
    text-align: center;
-   margin-top: 50px;
+   margin-top: 28px;
    margin-bottom: 30px;
    font-size: 30px;
    letter-spacing: 1px;
-   font-family: "EuropeExt";
+   font-family: "EuropeExt", "Arial", sans-serif;
    font-weight: 700;
    color: #01983b;
    text-transform: uppercase;
@@ -576,11 +523,12 @@ body {
    margin: auto;
    max-width: 1230px;
    line-height: 1.3;
+   font-size: 14px;
 }
 
 .table__tasks {
    color: #ffffff;
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
 }
 
 .table__list td {
@@ -634,7 +582,7 @@ body {
 }
 
 .table__tasks img {
-   padding: 0px 20px 0px 10px;
+   padding: 0 20px 0 10px;
 }
 
 .title__certificates {
@@ -642,7 +590,7 @@ body {
    margin-top: 15px;
    font-size: 30px;
    letter-spacing: 1px;
-   font-family: "EuropeExt";
+   font-family: "EuropeExt", "Arial", sans-serif;
    font-weight: 700;
    color: #2c2783;
    margin-bottom: 25px;
@@ -653,19 +601,17 @@ body {
    text-align: center;
 }
 .fancy__slider img {
-   width: 146px;
-   height: 206px;
-   margin-right: 40px;
+   margin: 0 20px;
 }
 
 .title__prize {
    font-size: 24px;
    text-align: center;
-   font-family: "EuropeExt";
+   font-family: "EuropeExt", "Arial", sans-serif;
    font-weight: 700;
    color: #2c2783;
    text-transform: uppercase;
-   margin-top: 30px;
+   margin-top: 20px;
    margin-bottom: 10px;
 }
 
@@ -689,20 +635,19 @@ body {
 
 .contakt__footer h1 {
    font-size: 30px;
-   letter-spacing: 2px;
    color: #ffffff;
    font-weight: 700;
-   font-family: "EuropeExt";
+   font-family: "EuropeExt", "Arial", sans-serif;
    text-transform: uppercase;
-   padding-top: 35px;
-   padding-bottom: 15px;
+   padding-top: 30px;
+   padding-bottom: 10px;
 }
 
 .contakt__text {
    width: 565px;
    font-size: 18px;
    color: #ffffff;
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
    letter-spacing: 1px;
    line-height: 1.3;
    margin-left: auto;
@@ -714,7 +659,7 @@ body {
    font-size: 14px;
    line-height: 1.5;
    display: inline-block;
-   margin-top: 15px;
+   margin-top: 7px;
 }
 
 .contakt__text a:last-child {
@@ -741,12 +686,12 @@ body {
    display: block;
    color: #ffffff;
    font-weight: 700;
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
 }
 
 .footer a {
    display: table;
-   margin: 0px auto;
+   margin: 0 auto;
    margin-bottom: 6px;
 }
 
@@ -763,7 +708,7 @@ body {
 .footer__soc .wezom {
    color: #ffffff;
    font-weight: 700;
-   font-family: "Arial";
+   font-family: "Arial", sans-serif;
    margin-top: 100px;
    text-transform: uppercase;
 }

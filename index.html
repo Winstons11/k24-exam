@@ -10,16 +10,17 @@
    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
    <link rel="stylesheet" href="css/slick.css">
    <link rel="stylesheet" href="css/slick-theme.css">
+   <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/dots.css">
    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body id="main">
    <header class="header">
       <div class="container">
          <div class="header__conteiner">
             <ul class="header__list">
-               <li><a href="#">ГЛАВНАЯ</a></li>
+               <li><a class="is-active" href="#">ГЛАВНАЯ</a></li>
                <li><a href="#sphere">О КОМПАНИИ</a></li>
                <li><a href="#">ВАКАНСИИ</a></li>
                <li><a href="#products">ПРОДУКЦИЯ</a></li>
@@ -446,11 +447,11 @@
       </h1>
    </div>
    <div class="fancy__slider">
-      <a data-fancybox="gallery" href="img/certificate1.jpg"><img src="img/certificate1.jpg" alt=""></a>
-      <a data-fancybox="gallery" href="img/certificate2.jpg"><img src="img/certificate2.jpg" alt=""></a>
-      <a data-fancybox="gallery" href="img/certificate3.jpg"><img src="img/certificate3.jpg" alt=""></a>
-      <a data-fancybox="gallery" href="img/certificate4.jpg"><img src="img/certificate4.jpg" alt=""></a>
-      <a data-fancybox="gallery" href="img/certificate5.jpg"><img src="img/certificate5.jpg" alt=""></a>
+      <a data-fancybox="gallery" href="img/sertificates/certificate1.jpg"><img src="img/sertificates/certificate1mini.jpg" alt=""></a>
+      <a data-fancybox="gallery" href="img/sertificates/certificate2.jpg"><img src="img/sertificates/certificate2mini.jpg" alt=""></a>
+      <a data-fancybox="gallery" href="img/sertificates/certificate3.jpg"><img src="img/sertificates/certificate3mini.jpg" alt=""></a>
+      <a data-fancybox="gallery" href="img/sertificates/certificate4.jpg"><img src="img/sertificates/certificate4mini.jpg" alt=""></a>
+      <a data-fancybox="gallery" href="img/sertificates/certificate5.jpg"><img src="img/sertificates/certificate5mini.jpg" alt=""></a>
    </div>
    <div class="title__prize">
       <h2>
@@ -471,7 +472,7 @@
                73000, Украина, г. Херсон, ул Советская, 41-А</span>
             <a href="tel:+380552123456">тел:+38(0552)123-456,</a>
             <a href="tel:789-403">789-403;</a>
-            <a href="fax:+380552123214">факс:+38(0552)123-214</a><br>
+            <a href="tel:+380552123214">факс:+38(0552)123-214</a><br>
             <a href="mailto:info@novaboard.com">e-mail:info@novaboard.com</a>
          </div>
       </div>
@@ -480,8 +481,8 @@
       </iframe>
    </div>
    <div class="footer">
-      <a href="info@novaboard.com"><img src="img/logoFooter.png" alt=""></a>
-      <a href="info@novaboard.com"><img src="img/logoFooter2.png" alt=""></a>
+      <a href="#main"><img src="img/logoFooter.png" alt=""></a>
+      <a href="#main"><img src="img/logoFooter2.png" alt=""></a>
       <span>2015 ©</span>
       <div class="footer__soc">
          <span>мы в социальных сетях</span>
@@ -495,8 +496,8 @@
 
    <script src="js/jquery-3.6.0.min.js"></script>
    <script src="js/slick.min.js"></script>
-   <script src="js/script.js"></script>
    <script src="js/jquery.fancybox.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
