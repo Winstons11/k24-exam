@@ -124,6 +124,7 @@ body {
    border: 0;
    background: none;
    padding: 0;
+   outline: none;
 }
 
 .line__form {
@@ -238,6 +239,7 @@ body {
    margin-bottom: 60px;
    border: 0;
    cursor: pointer;
+   outline: none;
 }
 
 .button__info:hover {
